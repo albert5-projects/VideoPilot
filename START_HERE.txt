@@ -1,0 +1,95 @@
+VIDEOPILOT 0.10.4 - CUSTOMIZABLE VIDEO AND REMOTION GRAPHICS
+
+More English voices:
+- Restart: Narrator now lists all 28 installed English voices (20 US, 8 UK).
+- Scroll the dropdown; accent and gender appear beside each name.
+- No extra downloads or speech-model loading in the GUI.
+
+Editor and editing choices:
+- Video tab: choose rules or codex, and capcut or kdenlive.
+- Rules: optional gentle slow zoom, pan, float or mixed movement.
+- Codex: image-aware editing decisions; the preset movement checkbox is ignored.
+- Codex does not freely control the editor GUI; review and export remain manual.
+- Enable Remotion and choose coverage in EITHER mode, including Codex.
+- Existing uninstalled project: Customize > Apply to current project > Continue.
+- Installed project: create an editing revision first.
+- Kdenlive needs no CapCut sample. Finish > Open / save Kdenlive project.
+- Save in Videos. Keep the VideoPilot media folder and subtitle file available.
+- Narrator > Hear 6-second sample. First synthesis takes longer; Stop cancels.
+- Small voice caches and existing Remotion packages avoid repeated downloads.
+
+Image repair:
+- Finish > Create image repair copy preserves narration and timing in a new project.
+- Import corrected images by shot filename, Continue, then install into a new empty project.
+- Near-duplicate automatic images with different prompts require review before building.
+
+Missing generated images:
+- Restart and click Recover generated images in the Flow tab.
+- Open the same Flow project and show the missing images with their full prompt cards.
+- Captures use identified image URLs; loading/recycled cards cannot borrow adjacent images.
+- Pending imports receive an automatic gallery pass after submissions finish.
+- Duplicate warnings trigger rechecking of automatic imports during recovery, with backups.
+- Recovery watches for 90 seconds and never clicks Generate.
+- After recovery, image checks run before rebuilding. Retry unresolved can spend more generation usage.
+- Temporary calibration text is explicitly deleted and checked before prompt entry.
+
+Faster Flow queue:
+- In the browser panel choose Submission timing > Every 6 seconds (default).
+- Each next click targets six seconds after the previous click, without waiting for images.
+- Captured results import immediately in the background, with star cleanup, into images/<shot_id>.png.
+- The Flow tab updates its ready count; shot filenames preserve the correct order.
+- Recover staged images from older runs: restart, then click Collect Flow downloads.
+- Result identities preserve shot order when completion order changes.
+- Flow's button availability still controls submissions.
+- After stopping, check all unresolved shots before confirming a retry.
+
+Composition update:
+- Images and diagrams now share separate regions, with room for captions.
+- Graphics enter at approximate spoken cues within each measured scene.
+- Type maximum image hold: 0.5-120 seconds, including decimals.
+- Stronger star boundary detection and detail-preserving repair when possible.
+- Existing installed edits remain protected; create a revision to rebuild.
+
+Quality update:
+- Improved landscape star detection and automatic refresh of old image cleanup.
+- Flow images > Erase remaining star: select the logo, preview, save, Continue.
+- Finish accepts MP3/WAV music and can browse recovered CapCut audio names.
+- Apply music to current project, then Continue, to change an uninstalled edit.
+- Sound import copies only effects used; unidentified cache names are not guessed.
+- Modest differences above and below the requested narration length are accepted.
+
+New controls in the Video tab:
+- Type your own image style.
+- Turn image movement on/off independently of your chosen image-switching interval.
+- Enable Remotion and set coverage, theme and accent under Customize graphics.
+- Reuses C:\Users\alber\vs code projects\mindistry_yt; no extra package copy.
+- Apply to current project and Continue to rebuild an uninstalled draft.
+- For installed edits, use Finish > Create editing revision first.
+
+Edit illustrated focus/process/comparison/timeline/orbit graphics in Script > Edit scene graphics.
+Preview completed clips through Preview storyboard. Graphics are rendered
+into MP4 clips; final video export remains manual in the selected editor.
+Open FLOW_SETUP.html for the updated step-by-step workflow guide.
+
+Already installed? Keep your .venv and models. Close VideoPilot,
+run Setup_Flow_Browser.bat once, then restart using Launch.bat or Launch.vbs.
+
+New installation: run Setup.bat and Download_Models.bat first.
+Your existing Codex CLI sign-in is reused. VS Code is optional.
+
+1. Create/open a project and prepare narration.
+2. Close any VideoPilot browser windows. In Flow images click Open Flow / sign in.
+3. Sign into Google in that ordinary browser, then CLOSE that window.
+   This browser remembers its own login. Your everyday browser's login
+   is separate; it is not copied.
+4. Click Run Flow queue in VideoPilot to reopen the saved browser profile.
+   Open one Flow project. Choose the two controls in the
+   browser panel, confirm Image settings and click Start queue.
+5. Keep the app and browser open. Completed images are collected into the
+   project and the pipeline continues. No extension is required.
+
+Read FLOW_SETUP.html for details, retries and manual-download recovery.
+Live Flow compatibility still needs testing with your account.
+
+CapCut version: 2.1.0. Supply a native sample with one photo, WAV and text
+clip. Verify the resulting project in CapCut. Export/render stays manual.

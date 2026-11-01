@@ -1,0 +1,50 @@
+CURRENT UPDATE: VIDEOPILOT 0.3.1 - SIGNED-IN FLOW BROWSER
+
+Close VideoPilot and run Setup_Flow_Browser.bat once. Restart the app.
+In Flow images choose Open Flow / sign in, sign in directly in the new
+browser, CLOSE that window, and click Run Flow queue in VideoPilot.
+Sign-in now uses ordinary Chrome/Edge without remote debugging enabled.
+Your dedicated browser login is remembered. Your everyday browser profile
+is not copied. No extension or new voice-model download is required.
+See FLOW_SETUP.html for the current workflow.
+
+The following notes describe the previous 0.2.1 update only:
+
+VIDEOPILOT 0.2.1 UPDATE — VOICE FIX + DARK THEME
+
+This update is for an existing VideoPilot 0.2 installation.
+You do NOT need to rerun Setup.bat or download the voice models again.
+
+1. Close VideoPilot. If it is working, click Stop and wait before closing.
+2. Extract VideoPilot_v0.2.1_Update.zip to a temporary folder.
+3. Open that extracted folder. Copy ALL its contents into your EXISTING
+   VideoPilot folder: the folder containing Launch.bat and Setup.bat.
+4. When Windows asks, choose "Replace the files in the destination".
+   Merge the videopilot subfolder; do not delete your existing installation.
+5. Run Launch.bat from your existing folder.
+   The title should say "VideoPilot 0.2.1".
+6. Click Open project. Open your bakery project's job.json under:
+   %LOCALAPPDATA%\VideoPilot\projects
+7. Click Continue project to retry voice generation using the saved script.
+
+The ZIP contains program updates only. Your installed Python environment,
+models, saved projects, CapCut templates, browser helper and account sign-ins
+remain in place. No Flow extension reload is required for this patch.
+
+WHAT CHANGED
+- Fixed the Kokoro 0.4.9 input type bug that caused:
+  "Actual: (tensor(int32)), expected: (tensor(float))".
+- Preserves fractional voice speeds when adjusting narration duration.
+- Dark tabs, dropdowns and their menus, text selection, scrollbars,
+  settings, buttons and app error/confirmation dialogs.
+- Copy error button in error dialogs.
+- Clarified "Image options for each shot".
+
+Windows file pickers follow Windows' own appearance settings.
+
+TESTING
+26 Python tests pass, including reproduction of the original type error.
+Real Kokoro narration generated successfully at 1.0x, 0.95x and 1.15x.
+The updated GUI was visually checked on Linux/Tk; native Windows appearance
+and the Windows title bar still need your local check.
+Flow and CapCut compatibility still have the limitations in README.md.

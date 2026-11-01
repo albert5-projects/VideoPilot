@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "VideoPilot Flow Helper",
+  "version": "0.2.5",
+  "description": "Runs your VideoPilot image queue in a Flow tab you explicitly activate. No API keys or cookie access.",
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "background": {"service_worker": "background.js"},
+  "action": {"default_title": "Open VideoPilot on this Flow tab"}
+}
